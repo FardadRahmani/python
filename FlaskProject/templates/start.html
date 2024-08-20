@@ -1,0 +1,21 @@
+<!--
+    Dieses Layout System sorgt dafür, dass wir uns in den einzelnen Templates auf den
+    Seiteninhalt konzentrieren können und im layout dann (zb main.html) um das Design, Navigation,
+    Fußzeile, Impressum etc
+ -->
+
+{% extends "layouts/main.html" %}
+{% block content %}
+
+    <h1>Ich bin  {{nameVar}}</h1>
+
+    <h1>PersonTupel: {{person}}</h1>
+    <h1>PersonTupelVorname: {{person[0]}}</h1>
+    <h1>PersonTupelNachname: {{person[1]}}</h1>
+
+    {% for item in items %}
+<!-- Berechnung könntest du hier ausführen, zB {{item.amount * 2}}, aber halte view lieber simpel ohne berechnung
+-->
+        <p> {{item.name}}: {{item.amount}} Stück</p>
+    {% endfor %}
+{% endblock %}

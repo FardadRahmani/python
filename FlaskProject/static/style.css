@@ -1,0 +1,54 @@
+
+.form  {
+
+    padding-left: 50 px;
+
+}
+.form-item {
+
+
+    color: Cyan;
+    margin: 10px;
+    display: block; /* Fügt die Elemente untereinander an */
+
+}
+
+.navigation {
+
+    padding-left: 20 px;
+
+}
+
+.navigation-item {
+    float: left;
+    color: Cyan;
+    padding-left: 20 px;
+    padding-right: 20 px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* p {}: css-Selektor
+p {
+    color: red;
+    font-size: 15px;
+
+}
+.important {
+    color: blue;
+    font-size: 30px;
+
+}
+
+.test {
+    text-decoration: underline;
+
+}*/

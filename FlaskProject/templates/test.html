@@ -1,0 +1,27 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+    {% if nameVar != None and age != None: %}
+        <h1>Der Name ist:  {{nameVar}}</h1>
+        <h1>Mein Alter betraegt: {{age}}</h1>
+    {% endif %}
+
+    <div> Ich bin der <strong>Seiteninhalt</strong>!   </div>
+
+    <div> Ich liebe <strong>Python <em>123</em></strong>!  </div>
+
+    <p> Ich bin ein <strong>PythonFan</strong>!   </p>
+
+    <form class="form" method="get">
+<!--
+    <input class="form-item" type="text" id="name" name="nameVar" placeholder="Name" />
+ -->
+        <label for="name">Name:</label>
+        <input class="form-item" type="text" id="name" name="nameVar" value="{% if nameVar != None: %}{{nameVar}}{% endif %}" />
+        <label for="alter">Alter:</label>
+        <input class="form-item" type="text" id="alter" name="age" value="{{age}}"/>
+        <br/>
+        <input class="form-item" type="submit" value="Formular abschicken!"/>
+    </form>
+
+{% endblock %}

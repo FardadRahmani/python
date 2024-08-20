@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head gehört nicht zum SeitenInhalt, sondern enthält nur Info über seite und titel wird auf Tab gezeigt -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask - Projekt</title>
+        <!-- Css einbinden: -->
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./skeleton.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+        <body>
+            <div class="container">
+
+                <!-- Hier gehört alles zum SeitenInhalt: -->
+                <div> Ich bin der <strong>Seiteninhalt</strong>!   </div>
+
+                <div> Ich bin der <strong>Seiteninhalt <em>123</em></strong>!  </div>
+                <!-- p: Paragraph(Absatz) -->
+                <p> Ich bin ein <strong>Absatz</strong>!   </p>
+                <p class="important"> Ich bin ein important <strong>Absatz</strong>!   </p>
+                <p> Ich bin noch ein <strong>Absatz</strong>!   </p>
+                <!-- Enter und Leerzeichen ohne tags werden ignoriert! -->
+                Ich bin kein neuer Absatz
+                Ich bin auch kein neuer Absatz
+                Ich bin ebenso kein neuer Absatz
+                <!-- tags wie <p> <h> <strong> haben alle semantische Bedeutung!
+                 Anders aber zb <div> dass rein als selektor zum bearbeiten dient-->
+                <div class="test"> <strong>Ich bin unterstrichener fetter Div!</strong>   </div>
+
+                <h1 class="important"> Ich bin eine important Überschrift erster Ordnung!   </h1>
+
+                <!-- Du kannst also alle tags ineinander verschachteln!!: <br/>-->
+                <!--
+                Du kannst aber kein tag in einem tag öffnen und in einem anderen erst schließen!!:
+                <p> Ich bin ein <strong>fettes   </p>
+                <p> Kind </strong> ist untersagt!   </p>
+
+                -->
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. et clita kasd gubergren, no sea takimata sanctus est
+                    <strong>Lorem ipsum dolor sit amet.</strong></p>
+                <h2> Ich bin eine Überschrift zweiter Ordnung!   </h2>
+                 <!-- So werden Umbrüche nicht ignoriert!: <br/>-->
+                <p>Lorem ipsum dolor sit amet, consetetur <br/>sadipscing elitr, <br/>sed diam <br/>nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. et clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet.</p>
+                <h3> Ich bin eine Überschrift dritter Ordnung!   </h3>
+
+            </div>
+
+    </body>
+</html>
